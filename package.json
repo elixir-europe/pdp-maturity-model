@@ -6,13 +6,18 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "deploy": "touch .output/public/.nojekyll ; push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "devDependencies": {
     "nuxt": "^3.3.3"
   },
   "dependencies": {
     "@mdi/font": "^7.2.96",
+    "@pinia/nuxt": "^0.4.7",
+    "echarts": "^5.4.2",
+    "papaparse": "^5.4.1",
+    "push-dir": "^0.4.1",
     "sass": "^1.60.0",
     "vite-plugin-vuetify": "^1.0.2",
     "vuetify": "^3.1.13"
