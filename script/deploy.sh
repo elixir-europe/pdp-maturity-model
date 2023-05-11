@@ -5,18 +5,16 @@ set -e
 
 # build
 npm run build
+npm run generate
 
 # Push modifications
 git add -A
 git commit -m 'deploy'
 git push -f git@github.com:elixir-europe/fosp-maturity-model.git main:main
 
-# Create dist folder
-mkdir -p dist
-cd dist
-
 # navigate into the build output directory
-touch .output/public/.nojekyll 
+cd .output/public/
+touch .nojekyll 
 
 # if you are deploying to a custom domain
 # echo 'www.example.com' > CNAME
