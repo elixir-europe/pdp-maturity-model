@@ -11,6 +11,10 @@ git add -A
 git commit -m 'deploy'
 git push -f git@github.com:elixir-europe/fosp-maturity-model.git main:main
 
+# Create dist folder
+mkdir -p dist
+cd dist
+
 # navigate into the build output directory
 touch .output/public/.nojekyll 
 
