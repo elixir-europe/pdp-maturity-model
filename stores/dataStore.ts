@@ -45,6 +45,7 @@ export const useImportStore = defineStore('ImportStore', {
                             }
                         }
                         delete this.rowSpans['undefined'];
+                        this.rowSpans["1.1.1"] = 5;
                         this.rowSpans["Appropriate stakeholder Research Community Engagement"] = 5;
                         this.rowSpans["Capacity Building driven by the FOSP Node"] = 5;
                         this.imported = true;
