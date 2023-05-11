@@ -1,19 +1,17 @@
 <template>
-    <v-footer class="footer">
-          <v-row justify="left" no-gutters>
-              <v-col class="text-center mt-6" cols="10">
-                <strong><i>FOSP Maturity Model</i></strong><br>
-              </v-col>
-            </v-row>
-            <v-row justify="center" no-gutters>
-              <v-col class="text-center" cols="1">
-                <v-img src="/github.png" height="100px" width="150px"/>
-              </v-col>
-            </v-row>
-            <v-row justify="center" no-gutters>
-              <v-col class="text-center" cols="3">
-                <v-img src="/ElixirLogo.png" height="100px" width="150px"/>
-              </v-col>
-            </v-row>
-      </v-footer>
-  </template>
+  <v-footer app class="primary" dark flat>
+    <v-spacer></v-spacer>
+    <div>
+      The FOSP Maturity Model 
+      <span class="font-italic font-weight-light"
+        >is maintained <a target="_blank" href="https://elixir-europe.org/"
+          >ELIXIR</a
+        > by and the website by 
+        <a target="_blank" href="https://www.france-bioinformatique.fr/"
+          >IFB-ElixirFr</a
+        ></span
+      >.
+    </div>
+    <v-spacer></v-spacer>
+  </v-footer>
+</template>
