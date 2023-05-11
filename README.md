@@ -1,6 +1,5 @@
 # The ELIXIR FOSP Maturity Model
 
-
 ## Goals
 
 The aim of this Maturity Model is to create a guide which can be used by technical decision makers to support the organisational data-sharing maturation strategy which they are tasked to execute. It should help bridge the gap between the goals of the high level decision makers and the actions of the technical implementers.
@@ -79,7 +78,9 @@ npm run deploy
 
 ## Citation
 
-Zenodo DOI coming soon
+Use the citation part in the top right menu.
+
+*Note : a Zenodo DOI is coming soon*
 
 ## Acknowledgement
 
