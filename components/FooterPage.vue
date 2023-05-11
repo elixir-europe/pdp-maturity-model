@@ -1,21 +1,19 @@
 <template>
-    <v-footer app class="primary" dark flat>
-      <v-spacer></v-spacer>
-      <div>
-        Elixir
-        <span class="font-italic font-weight-light"
-          >is maintained by
-          <a target="_blank" href="https://www.france-bioinformatique.fr/"
-            >IFB-ElixirFr</a
-          ></span
-        >.
-      </div>
-      <v-spacer></v-spacer>
-    </v-footer>
+    <v-footer class="footer">
+          <v-row justify="left" no-gutters>
+              <v-col class="text-center mt-6" cols="10">
+                <strong><i>FOSP Maturity Model</i></strong><br>
+              </v-col>
+            </v-row>
+            <v-row justify="center" no-gutters>
+              <v-col class="text-center" cols="1">
+                <v-img src="/github.png" height="100px" width="150px"/>
+              </v-col>
+            </v-row>
+            <v-row justify="center" no-gutters>
+              <v-col class="text-center" cols="3">
+                <v-img src="/ElixirLogo.png" height="100px" width="150px"/>
+              </v-col>
+            </v-row>
+      </v-footer>
   </template>
-
-<script lang="ts">
-export default {
-  name: "Footer",
-};
-</script>

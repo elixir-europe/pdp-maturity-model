@@ -1,14 +1,21 @@
 <template>
+  
   <v-layout class="bg-grey-lighten-3">
-    
-    <v-app-bar
-      color="primary"
+    <v-overlay :value="drawer" z-index="4">
+    </v-overlay>
+    <v-navigation-drawer
+      v-model="drawer"
+      location="left"
+      temporary
     >
-      <v-app-bar-title><strong>FOSP Maturity Model</strong></v-app-bar-title>
+      <v-list
+        :items="items"
+      ></v-list>
+    </v-navigation-drawer>
 
-      <template v-slot:append>
-        <v-btn icon="mdi-dots-vertical"></v-btn>
-      </template>
+    <v-app-bar app clipped-left dark color="#447fa6">
+      <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
+      <v-toolbar-title>FOSP Maturity Model</v-toolbar-title>
     </v-app-bar>
   
     <v-main>
@@ -24,7 +31,7 @@
                 <div>Level 0</div>
                 <br>
                 <p class="text-h4 text--primary">
-                  <strong>Governance, Strategy & Sustainability</strong> 
+                  Governance, Strategy & Sustainability
                 </p>
                 <br>
               </v-card-text>
@@ -51,7 +58,7 @@
                 <div>Level 1</div>
                 <br>
                 <p class="text-h4 text--primary">
-                  <strong>Legal</strong> 
+                  Legal
                 </p>
                 <br><br><br>
               </v-card-text>
@@ -75,7 +82,7 @@
                 <div>Level 2</div>
                 <br>
                 <p class="text-h4 text--primary">
-                 <strong>Data & metadata management</strong> 
+                  Data & metadata management
                 </p>
                 <br><br><br>
               </v-card-text>
@@ -103,7 +110,7 @@
                 <div>Level 3</div>
                 <br>
                 <p class="text-h4 text--primary">
-                  <strong>Technical Infrastructure</strong> 
+                  Technical Infrastructure
                 </p>
               </v-card-text>
               <v-col>
@@ -131,7 +138,7 @@
                 <div>Level 4</div>
                 <br>
                 <p class="text-h4 text--primary">
-                  <strong> Operations Support</strong>
+                  Operations Support
                 </p>
                 <br><br><br><br>
               </v-card-text>
@@ -151,7 +158,7 @@
                 <div>Level 5</div>
                 <br>
                 <p class="text-h4 text--primary">
-                  <strong>Communications, Community Building and Engagement</strong> 
+                  Communications, Community Building and Engagement
                 </p>
                 <br><br>
               </v-card-text>
@@ -169,9 +176,6 @@
         </v-container>
         <br><br>
     </v-main>
-    <footer>
-      test
-    </footer>
 
   </v-layout>
 
@@ -189,44 +193,49 @@
       <v-footer class="footer">
         <v-row justify="left" no-gutters>
             <v-col class="text-center mt-6" cols="10">
-              <i>FOSP (Federated One Health Surveillance Platform) <br> Maturity Model</i><br>
+              <strong><i>FOSP Maturity Model</i></strong><br>
             </v-col>
           </v-row>
           <v-row justify="center" no-gutters>
-            <v-col class="text-center" cols="7">
-              <v-img src="/github.png" height="50px" width="100px"/>
+            <v-col class="text-center" cols="1">
+              <v-img src="/github.png" height="100px" width="150px"/>
             </v-col>
           </v-row>
-          <v-row justify="left" no-gutters>
-            <v-col class="text-center" cols="5">
+          <v-row justify="center" no-gutters>
+            <v-col class="text-center" cols="3">
               <v-img src="/ElixirLogo.png" height="100px" width="150px"/>
             </v-col>
           </v-row>
-    </v-footer> 
+    </v-footer>
     </v-layout>
   </template>
-
+  
   
   <script>
-  import { useImportStore } from "@/stores/dataStore";
-  export default {
-    async setup() {
-      const importStore = useImportStore();
-      return { importStore };
+export default {
+  data: () => ({
+    drawer: false,
+    group: null,
+    items: [
+      {
+        title: 'Global Model View',
+        value: 'Global Model View',
+      },
+      {
+        title: 'Domain Levels',
+        value: 'Domain Levels',
+      },
+    ],
+  }),
+
+  watch: {
+    group () {
+      this.drawer = false
     },
-    data() {
-      return {
-        columnName: [],
-      };
-    },
-    async created() {
-      await this.importStore.import();
-    },
-    
-  };
-  </script>
-  
-  
+  },
+}
+</script>
+
   <style lang="scss">
   @use "./settings";
 
@@ -234,4 +243,10 @@
     border-radius:30px;
 }
 
+
+#drawer{
+  background: rgba(240, 240, 240, 1);
+  
+}
   </style>
+  

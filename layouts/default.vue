@@ -3,20 +3,19 @@
     <v-layout class="bg-grey-lighten-3">
       <v-overlay :value="drawer" z-index="4">
       </v-overlay>
-      <v-navigation-drawer>
-        <v-list dense>
-          <v-list-item>
-            Global Model View
-          </v-list-item>
-          <v-list-item>
-            Domain Levels
-          </v-list-item>
-        </v-list>
+      <v-navigation-drawer
+        v-model="drawer"
+        location="left"
+        temporary
+      >
+        <v-list
+          :items="items"
+        ></v-list>
       </v-navigation-drawer>
   
       <v-app-bar app clipped-left dark color="#447fa6">
         <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
-        <v-toolbar-title>FOSP Maturity Model</v-toolbar-title>
+        <v-toolbar-title><strong>FOSP Maturity Model</strong></v-toolbar-title>
       </v-app-bar>
     
       <v-main>
@@ -207,32 +206,36 @@
                 <v-img src="/ElixirLogo.png" height="100px" width="150px"/>
               </v-col>
             </v-row>
-      </v-footer> 
+      </v-footer>
       </v-layout>
     </template>
-  
+    
     
     <script>
-    import { useImportStore } from "@/stores/dataStore";
-    export default {
-      async setup() {
-        const importStore = useImportStore();
-        return { importStore };
+  export default {
+    data: () => ({
+      drawer: false,
+      group: null,
+      items: [
+        {
+          title: 'Global Model View',
+          value: 'Global Model View',
+        },
+        {
+          title: 'Domain Levels',
+          value: 'Domain Levels',
+        },
+      ],
+    }),
+
+    watch: {
+      group () {
+        this.drawer = false
       },
-      data() {
-        return {
-          columnName: [],
-        };
-      },
-      async created() {
-        await this.importStore.import();
-      },
-      
-    };
-    
-    </script>
-    
-    
+    },
+  }
+</script>
+
     <style lang="scss">
     @use "./settings";
   
