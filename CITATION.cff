@@ -10,6 +10,6 @@ authors:
 - family-names: "The ELIXIR community"
 title: "The ELIXIR FOSP Maturity Model"
 version: 1.0.0
-doi: "coming soon"
+# doi: ""
 date-released: 2023-05-11
 url: "https://github.com/elixir-europe/fosp-maturity-model"
