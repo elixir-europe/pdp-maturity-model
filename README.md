@@ -2,4 +2,6 @@
 
 ### Dev part 
 
+```bash
+npm install
 ```

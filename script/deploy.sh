@@ -11,13 +11,6 @@ git add -A
 git commit -m 'deploy'
 git push -f git@github.com:elixir-europe/fosp-maturity-model.git main:main
 
-# navigate into the build output directory
-cd dist
+touch .output/public/.nojekyll
 
-# if you are deploying to a custom domain
-# echo 'www.example.com' > CNAME
-git init
-git add -A
-git commit -m 'deploy'
-git push -f git@github.com:elixir-europe/fosp-maturity-model.git main:gh-pages
-cd ..
+push-dir --dir=dist --branch=gh-pages --cleanup
