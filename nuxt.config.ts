@@ -5,6 +5,10 @@ import { createResolver } from '@nuxt/kit'
 const { resolve } = createResolver(import.meta.url)
 
 export default defineNuxtConfig({
+    target: 'static',
+    buildModules: [
+    '@nuxt/image',
+    ],
     ssr: false,
     app: {
         baseURL: '/fosp-maturity-model/',
@@ -33,7 +37,15 @@ export default defineNuxtConfig({
         {
             autoImports: ['defineStore', 'acceptHMRUpdate'],
         },
-    ],],
+    ],
+    [
+        '@nuxt/content'
+      ]
+    ],
+  components: [{
+    path: './components',
+    global: true
+    }],
     imports: {
         dirs: ['stores'],
     },
