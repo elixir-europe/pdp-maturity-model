@@ -1,5 +1,5 @@
 <template>
-  <div v-if="importTable !== undefined && importTable !== null && importTable.length !== 0 && importStore.imported">
+  <div v-if="importTable !== undefined && importTable !== null && importTable.length !== 0 ">
   <v-table >
     <thead>
       <tr>
@@ -34,14 +34,8 @@
 </template>
 
 <script>
-import { useImportStore } from "@/stores/dataStore";
-
 export default {
   props: { importTable: Array, importColumn: Array, importRowSpans: Object },
-  async setup() {
-    const importStore = useImportStore();
-    return { importStore };
-  },
   data() {
     return {
       display: true,

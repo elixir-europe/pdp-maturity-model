@@ -1,7 +1,6 @@
 
  <template>
-
-
+  {{ importStore.importColumn }}
   <v-expansion-panels v-if='importStore.imported'>
     <v-expansion-panel
       v-for="[key, value] of Object.entries(importStore.maturityTableSub)"
@@ -11,7 +10,7 @@
         {{ key }}
       </v-expansion-panel-title>
       <v-expansion-panel-text>
-        <displayTable :importTable="value" :importColumn="importStore.importColumn" :importRowSpans="importStore.rowSpans"/>
+        <displayTable :importTable="value" :importColumn="importStore.columnName" :importRowSpans="importStore.rowSpans"/>
       </v-expansion-panel-text>
     </v-expansion-panel>
   </v-expansion-panels>
