@@ -14,7 +14,8 @@ export default defineNuxtConfig({
         baseURL: '/fosp-maturity-model/',
     },
     css: ['vuetify/lib/styles/main.sass',
-        '@mdi/font/css/materialdesignicons.min.css',],
+          '@mdi/font/css/materialdesignicons.min.css',
+           '~/assets/styles/myStyle.css'],
     build: {
         transpile: ['vuetify', '@pinia/nuxt'],
     },

@@ -1,5 +1,5 @@
 <template>
-    <v-footer class="footer">
+    <v-footer elevated class="bg-grey-8 text-white" align="center">
           <v-row justify="left" no-gutters>
               <v-col class="text-center mt-6" cols="10">
                 <strong><i>FOSP Maturity Model</i></strong><br>
