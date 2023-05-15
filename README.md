@@ -1,4 +1,4 @@
-# The ELIXIR FOSP Maturity Model
+# The ELIXIR Maturity Model for Federated One Health Surveillance Platforms (FOSP)
 
 ## Goals
 

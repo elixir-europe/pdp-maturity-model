@@ -1,7 +1,7 @@
 <template>
   <v-layout full-height="true">
     <v-app-bar
-      title="The ELIXIR FOSP Maturity Model"
+      title="The ELIXIR Maturity Model for Federated One Health Surveillance Platforms (FOSP)"
       style="background: #225472; color: white"
     >
       <template v-slot:append>
@@ -15,10 +15,10 @@
             background: #023452;
             background-image: linear-gradient(#225472, #023452 55%);
           "
-          class="d-flex align-center justify-center"
+          class="d-flex align-center justify-center pa-6"
         >
           <img src="/ElixirLogo_white.png" alt="" style="height: 200px" />
-          <h1 style="color: white">The ELIXIR FOSP Maturity Model</h1>
+          <h1 style="color: white">The ELIXIR Maturity Model for Federated One Health Surveillance Platforms (FOSP)</h1>
         </div>
         <v-container>
           <slot />

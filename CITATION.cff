@@ -8,7 +8,7 @@ authors:
   given-names: "Imane"
   orcid: "https://orcid.org/0000-0002-1654-6652"
 - family-names: "The ELIXIR community"
-title: "The ELIXIR FOSP Maturity Model"
+title: "The ELIXIR Maturity Model for Federated One Health Surveillance Platforms (FOSP)"
 version: 1.0.0
 # doi: ""
 date-released: 2023-05-11
