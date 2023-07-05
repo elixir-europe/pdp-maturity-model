@@ -13,15 +13,15 @@
     <v-row>
       <v-col>
         <p><b>Contact us</b></p>
-        <p>Github : <a href="https://github.com/elixir-europe/fosp-maturity-model/issues/new" target="_blank">create a issue</a> </p>
+        <p>Github : <a href="https://github.com/elixir-europe/pdp-maturity-model/issues/new" target="_blank">create a issue</a> </p>
       </v-col>
       <v-col>
-        <p><b>About ELIXIR FOPS intiative</b></p>
+        <p><b>About ELIXIR PDP intiative</b></p>
         <p>
-          The FOSP Maturity Model
+          The PDP Maturity Model
           <span class="font-italic font-weight-light"
-            >is maintained
-            <a target="_blank" href="https://elixir-europe.org/">ELIXIR</a> by
+            >is maintained by
+            <a target="_blank" href="https://elixir-europe.org/">ELIXIR</a>
             and the website by
             <a target="_blank" href="https://www.france-bioinformatique.fr/"
               >IFB-ElixirFr</a

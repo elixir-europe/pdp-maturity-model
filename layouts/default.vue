@@ -1,11 +1,11 @@
 <template>
   <v-layout full-height="true">
     <v-app-bar
-      title="The ELIXIR Maturity Model for Federated One Health Surveillance Platforms (FOSP)"
+      title="The ELIXIR Maturity Model for Pathogen Data Platforms (PDP)"
       style="background: #225472; color: white"
     >
       <template v-slot:append>
-        <v-btn icon="mdi-github" href="https://github.com/elixir-europe/fosp-maturity-model" target="_blank"></v-btn> </template
+        <v-btn icon="mdi-github" href="https://github.com/elixir-europe/pdp-maturity-model" target="_blank"></v-btn> </template
     ></v-app-bar>
     <v-main class="fill-height" scrollable>
       <div class="fill-height" style="max-height: calc(100% - 40px)">
@@ -18,7 +18,7 @@
           class="d-flex align-center justify-center pa-6"
         >
           <img src="/ElixirLogo_white.png" alt="" style="height: 200px" />
-          <h1 style="color: white">The ELIXIR Maturity Model for Federated One Health Surveillance Platforms (FOSP)</h1>
+          <h1 style="color: white">The ELIXIR Maturity Model for Pathogen Data Platforms (PDP)</h1>
         </div>
         <v-container>
           <slot />

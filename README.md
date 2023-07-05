@@ -1,4 +1,4 @@
-# The ELIXIR Maturity Model for Federated One Health Surveillance Platforms (FOSP)
+# The ELIXIR Maturity Model for Pathogen Data Platforms (PDP)
 
 ## Goals
 
@@ -6,7 +6,7 @@ The aim of this Maturity Model is to create a guide which can be used by technic
 
 ## Web site
 
-[https://elixir-europe.github.io/fosp-maturity-model/](https://elixir-europe.github.io/fosp-maturity-model/)
+[https://elixir-europe.github.io/pdp-maturity-model/](https://elixir-europe.github.io/pdp-maturity-model/)
 
 ## Overview
 
@@ -18,8 +18,8 @@ The aim of this Maturity Model is to create a guide which can be used by technic
 
 ### Questions
 
-[:speech_balloon: Ask a question](https://github.com/elixir-europe/fosp-maturity-model/issues/new)
-[:book: Read the questions](https://github.com/elixir-europe/fosp-maturity-model/issues/)
+[:speech_balloon: Ask a question](https://github.com/elixir-europe/pdp-maturity-model/issues/new)
+[:book: Read the questions](https://github.com/elixir-europe/pdp-maturity-model/issues/)
 
 **Contribution**
 

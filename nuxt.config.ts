@@ -11,7 +11,7 @@ export default defineNuxtConfig({
     ],
     ssr: false,
     app: {
-        baseURL: '/fosp-maturity-model/',
+        baseURL: '/pdp-maturity-model/',
     },
     css: ['vuetify/lib/styles/main.sass',
         '@mdi/font/css/materialdesignicons.min.css',],

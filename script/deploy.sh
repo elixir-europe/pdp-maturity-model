@@ -10,7 +10,7 @@ npm run generate
 # Push modifications
 git add -A
 git commit -m 'deploy'
-git push -f git@github.com:elixir-europe/fosp-maturity-model.git main:main
+git push -f git@github.com:elixir-europe/pdp-maturity-model.git main:main
 
 # navigate into the build output directory
 cd .output/public/
@@ -21,5 +21,5 @@ touch .nojekyll
 git init
 git add -A
 git commit -m 'deploy'
-git push -f git@github.com:elixir-europe/fosp-maturity-model.git main:gh-pages
+git push -f git@github.com:elixir-europe/pdp-maturity-model.git main:gh-pages
 cd ..
