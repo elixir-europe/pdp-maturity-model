@@ -33,7 +33,7 @@ Our web site is developped with Vue3 and Nuxtt3 . If you want to know more about
 
 ### Setup
 
-Make sure to install the following dependencies:
+Make sure to install the dependencies:
 
 ```bash
 # yarn
