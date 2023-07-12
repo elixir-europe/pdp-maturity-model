@@ -1,0 +1,1 @@
+import{u as e}from"./dataStore.1a28c895.js";import{a as r}from"./entry.89766809.js";import"./_commonjsHelpers.28e086c5.js";const o={async setup(){return{importStore:e()}},data(){return{columnName:[]}},async created(){await this.importStore.import()}};function n(t,s,a,p,c,_){return null}const l=r(o,[["render",n]]);export{l as default};
